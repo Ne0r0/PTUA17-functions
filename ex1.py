@@ -13,15 +13,18 @@
 # puzzle_pieces([1, 2], [-1, -1]) ➞ False
 # puzzle_pieces([9, 8, 7], [7, 8, 9, 10]) ➞ False
 
-def puzzle_pieces(a, b):
-    if len(a) != len(b): #checking if list are same length
+from typing import List
+
+
+def puzzle_pieces(first_list: List[int], second_list: List[int]) -> bool:
+    if len(first_list) != len(second_list): #checking if list are same length
         return False
 
-    sums = [] #creating empty list
-    for i in range(len(a)): #Loop through all elements in the lists
-        sums.append(a[i] + b[i])
+    sums: List[int] = [] #creating empty list
+    for i in range(len(first_list)): #Loop through all elements in the lists
+        sums.append(first_list[i] + second_list[i])
 
-    if len(set(sums)) == 1: #Check if all sums are the same
+    if len(set(sums)) == 1: #Check if all sum lists are the same
         return True
     else:
         return False
