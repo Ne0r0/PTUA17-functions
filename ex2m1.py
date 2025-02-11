@@ -23,11 +23,11 @@ def filter_and_sort_restaurants() -> None:
     
     for _ in range(num_restaurants):
         name: str = input("Enter restaurant name: ")
-        rating: float = float(input("Enter restaurant rating: "))
+        rating = float(input("Enter restaurant rating: "))
         restaurants.append({"name": name, "rating": rating})
     
     min_rating_input = input("Now enter the minimum restaurant rating (or leave blank): ")
-    min_rating: float = float(min_rating_input) if min_rating_input else 4.0 #Default value is 4.0, otherwise users input float
+    min_rating = float(min_rating_input) if min_rating_input else 4.0 #Default value is 4.0, otherwise users input float
     
     filtered_restaurants: List[str] = [entry["name"] for entry in restaurants if entry["rating"] >= min_rating]
     filtered_restaurants.sort()
