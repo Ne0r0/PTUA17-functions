@@ -9,7 +9,7 @@ from typing import List
 def new_list(int_list: List[int]) -> List[int]:
     return [number for number in range(1, 1001) if number % 6 == 0]
 result = new_list([])
-print(result)
+print(f"Skaičiai nuo 1 iki 1000, kurie dalijasi iš 6: {result}")
 
 
 # int_list = [number for number in range(1, 1001) if number % 6 == 0]
