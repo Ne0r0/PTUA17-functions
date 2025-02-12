@@ -5,8 +5,9 @@
 # Įveskite tekstą: Šioje paskaitoje aptarsime papildomas Python integruotų duomenų struktūrų funkcijas.
 # Žodžių su 'e' skaičius: 5
 
+from typing import List, Union
 
-def word_with_e(text):
+def word_with_e(text: List[str | int]) -> List[str | int]:
     return len([word for word in user_input.split() if 'e' in word])
 
 user_input = input("Įveskite tekstą: ")
