@@ -15,10 +15,12 @@ word_list = ["Adventure", "Cascade", "Paradox", "Astonish", "Crimson", "Pioneer"
 #     print(word_p_list)
 # filter_words_by_p(word_list)
 
+
 def extract_specific_words(word_list: List[str]) -> List[str]:
     return [name for name in word_list if name.upper().startswith('P')]
 result = extract_specific_words(word_list)
 print(result)
+
 
 # from typing import List
 # word_list = ['Apple', 'Car', 'Proud', 'Apricot', 'Plank', 'Calk', 'Alphabet', 'Cork', 'August', 'Plain', 'peach']
