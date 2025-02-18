@@ -41,21 +41,21 @@ print(words)
 # Example call and result:
 # start_with_vowel("apple", "banana", "orange") ➞ ["apple", "orange"]
 
-start_with_vowel = ["apple", "banana", "orange"]
-vowel = []
-for vowels in start_with_vowel:
-    if vowels [0] in "aeiou":
-        vowel.append(vowels)
-print(vowel)
+# start_with_vowel = ["apple", "banana", "orange"]
+# vowel = []
+# for vowels in start_with_vowel:
+#     if vowels [0] in "aeiou":
+#         vowel.append(vowels)
+# print(vowel)
 
 
-start_with_vowel = ["apple", "banana", "orange"]
-vowel = [vowels for vowels in start_with_vowel if vowels[0] in "aeiou"]
-print(vowel)
+# start_with_vowel = ["apple", "banana", "orange"]
+# vowel = [vowels for vowels in start_with_vowel if vowels[0] in "aeiou"]
+# print(vowel)
 
 
 def start_with_vowel(*vowel):
-    return list(filter(lambda x: x[0].lower() in "aeiou", vowel))
+    return list(filter(lambda x: x[0] in "aeiou", vowel))
 result = start_with_vowel("apple", "banana", "orange")
 print(result)
 
