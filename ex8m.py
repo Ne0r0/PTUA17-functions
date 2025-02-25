@@ -23,10 +23,10 @@ def safe_divide(num1: Optional[int], num2: Optional[int] ) -> float:
         return result
     except ZeroDivisionError as e:
         logging.error(f"User divided by 0 {e}")
-        print(f"You can't do math")
+        return "You can't do math"
     except TypeError as e:
         logging.error(f"User used letters not a number: {e}")
-        print(f"Don't use letters, you dumb!!")
+        return "Don't use letters, you dumb!!"
 
     
 print(safe_divide(20, 0))
