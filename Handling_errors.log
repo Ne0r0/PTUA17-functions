@@ -1,0 +1,40 @@
+2025-02-19 19:24:57 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:25:32 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:25:41 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:26:30 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:27:57 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:28:14 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:28:30 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:29:01 - ERROR - User divided by 0 <class 'ZeroDivisionError'>
+2025-02-19 19:29:01 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:06:14 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:09:04 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:14:21 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:18:15 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:20:01 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:20:29 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:21:02 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:24:17 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:25:25 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:25:25 - ERROR - Searching somethiing else list index out of range
+2025-02-19 20:26:10 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:26:10 - ERROR - Searching somethiing else <class 'IndexError'>
+2025-02-19 20:50:44 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 20:51:36 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 21:10:05 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 21:10:05 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-19 21:10:05 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-19 21:17:52 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 21:17:52 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-19 21:17:52 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-19 21:26:43 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 21:26:43 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-19 21:26:43 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-19 21:27:13 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-19 21:27:13 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-19 21:27:13 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-19 21:27:13 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 17:42:34 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 17:42:34 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 17:42:34 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 17:42:34 - ERROR - ValueError occurred: <class 'ValueError'>

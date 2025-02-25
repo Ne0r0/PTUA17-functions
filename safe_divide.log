@@ -1,0 +1,10 @@
+2025-02-18 20:18:19 - ERROR - User divided by 0 division by zero
+2025-02-18 20:18:19 - ERROR - unsupported operand type(s) for /: 'str' and 'int'
+2025-02-18 20:20:08 - ERROR - User divided by 0 division by zero
+2025-02-18 20:20:08 - ERROR - User used letters not a number: unsupported operand type(s) for /: 'str' and 'int'
+2025-02-18 20:20:57 - ERROR - User divided by 0 division by zero
+2025-02-18 20:20:57 - ERROR - User used letters not a number: unsupported operand type(s) for /: 'int' and 'str'
+2025-02-18 20:50:31 - ERROR - User divided by 0 division by zero
+2025-02-18 20:50:31 - ERROR - User used letters not a number: unsupported operand type(s) for /: 'int' and 'str'
+2025-02-18 20:53:44 - ERROR - User divided by 0 division by zero
+2025-02-18 20:53:44 - ERROR - User used letters not a number: unsupported operand type(s) for /: 'int' and 'str'
