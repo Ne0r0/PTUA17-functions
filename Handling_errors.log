@@ -38,3 +38,13 @@
 2025-02-25 17:42:34 - ERROR - Searching something else in the list <class 'IndexError'>
 2025-02-25 17:42:34 - ERROR - There are only three friends <class 'KeyError'>
 2025-02-25 17:42:34 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 17:49:23 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 17:49:23 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 17:49:23 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 17:49:23 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 17:49:25 - ERROR - There is some problem with the code
+2025-02-25 17:50:24 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 17:50:24 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 17:50:24 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 17:50:24 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 17:50:26 - ERROR - There is some problem with the code: <class 'NameError'>

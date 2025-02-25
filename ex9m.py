@@ -50,6 +50,6 @@ def handle_name_error():
         geek = input("Enter something: ")
         printf(geek)
     except NameError:
-        logging.error("There is some problem with the code")
+        logging.error(f"There is some problem with the code: {NameError}")
         print("Caught a NameError! Did you mean 'print' instead of 'printf'?")
 handle_name_error()
