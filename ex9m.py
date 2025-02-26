@@ -1,4 +1,4 @@
-# TypeError, ValueError, KeyError, IndexError, AttributeError?, ir dar trys papildomi liko (NameError, )
+# TypeError, ValueError, KeyError, IndexError, AttributeError?, ir dar trys papildomi liko (NameError, MemoryError)
 
 import logging
 import math
@@ -48,8 +48,19 @@ print(sqrt_number())
 def handle_name_error():
     try:
         geek = input("Enter something: ")
+        logging.info(f"User input {geek}")
         printf(geek)
     except NameError:
         logging.error(f"There is some problem with the code: {NameError}")
         print("Caught a NameError! Did you mean 'print' instead of 'printf'?")
 handle_name_error()
+
+def consume_memory():
+    try:
+        data = 'a' * (10**8)  
+        while True:
+            data += data
+    except MemoryError:
+        logging.error("Memory limit exceeded:")
+        print("PC is over heating")
+consume_memory()

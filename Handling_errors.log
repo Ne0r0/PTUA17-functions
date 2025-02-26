@@ -48,3 +48,22 @@
 2025-02-25 17:50:24 - ERROR - There are only three friends <class 'KeyError'>
 2025-02-25 17:50:24 - ERROR - ValueError occurred: <class 'ValueError'>
 2025-02-25 17:50:26 - ERROR - There is some problem with the code: <class 'NameError'>
+2025-02-25 20:31:51 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 20:31:51 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 20:31:51 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 20:31:51 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 20:31:53 - ERROR - There is some problem with the code: <class 'NameError'>
+2025-02-25 20:32:44 - ERROR - Memory limit exceeded
+2025-02-25 20:34:54 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 20:34:54 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 20:34:54 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 20:34:54 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 20:34:56 - ERROR - There is some problem with the code: <class 'NameError'>
+2025-02-25 20:35:30 - ERROR - Memory limit exceeded: {MemoryError}
+2025-02-25 20:39:26 - ERROR - Used letter not a number <class 'TypeError'>
+2025-02-25 20:39:26 - ERROR - Searching something else in the list <class 'IndexError'>
+2025-02-25 20:39:26 - ERROR - There are only three friends <class 'KeyError'>
+2025-02-25 20:39:26 - ERROR - ValueError occurred: <class 'ValueError'>
+2025-02-25 20:39:28 - INFO - User input 52
+2025-02-25 20:39:28 - ERROR - There is some problem with the code: <class 'NameError'>
+2025-02-25 20:40:09 - ERROR - Memory limit exceeded: {MemoryError}
