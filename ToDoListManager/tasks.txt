@@ -1,0 +1,4 @@
+{"task": "hi", "done": false}
+{"task": "People", "done": true}
+{"task": "Eat something", "done": true}
+{"task": "Help to someone", "done": false}
