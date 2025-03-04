@@ -1,6 +1,7 @@
 import json
 from typing import List, Dict, Any
 from datetime import datetime
+from tabulate import tabulate
 
 class ToDoList:
     def __init__(self) -> None:
@@ -28,10 +29,12 @@ class ToDoList:
         if not self.tasks: #There are no task
             print("No task available")
         else:
+            table = []
             for idx, task in enumerate(self.tasks, start=1):
                 status = "[✔]" if task["done"] else "[ ]"
                 due_info = f" (Due: {task['due']})" if task.get("due") else ""
-                print(f"{idx}. {task['task']} {status}{due_info}")
+                table.append([idx, task["task"], due_info, status])
+            print(tabulate(table, headers=["#", "Task", "Due Date", "Done"], tablefmt="grid"))
 
     def mark_task_as_done(self, task_number: int) -> None:
         if 1 <= task_number <= len(self.tasks):
