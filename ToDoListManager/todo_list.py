@@ -1,13 +1,25 @@
 import json
 from typing import List, Dict, Any
+from datetime import datetime
 
 class ToDoList:
-    def __init__(self):
+    def __init__(self) -> None:
         self.tasks: List[Dict[str, Any]] = self.load_tasks()
 
-    def add_task(self, task) -> None:
+    def add_task(self) -> None:
         description: str = input("Enter task description: ")
-        task: Dict[str, Any] = {"task": description, "done": False}
+        while True:
+            task_date = input("Enter Date yyyy-mm-dd: ")
+            try:
+                due_date = datetime.strptime(task_date.strip(), "%Y-%m-%d").date()
+                break
+            except ValueError:
+                print("INVALID date. Please use the format yyyy-mm-dd.")
+        task: Dict[str, Any] = {
+            "task": description,
+            "due": due_date.strftime("%Y-%m-%d"),
+            "done": False
+        }
         self.tasks.append(task)
         print("Your task was successfully added!")
         self.save_tasks()
@@ -18,7 +30,8 @@ class ToDoList:
         else:
             for idx, task in enumerate(self.tasks, start=1):
                 status = "[✔]" if task["done"] else "[ ]"
-                print(f"{idx}. {task['task']} {status}")
+                due_info = f" (Due: {task['due']})" if task.get("due") else ""
+                print(f"{idx}. {task['task']} {status}{due_info}")
 
     def mark_task_as_done(self, task_number: int) -> None:
         if 1 <= task_number <= len(self.tasks):
@@ -62,15 +75,21 @@ def main() -> None:
         choice = input("Enter your choice: ")
 
         if choice == "1":
-            todo_list.add_task("")
+            todo_list.add_task()
         elif choice == "2":
             todo_list.view_tasks()
         elif choice == "3":
-            task_number = int(input("Enter the task number to mark as done: "))
-            todo_list.mark_task_as_done(task_number)
+            try:
+                task_number = int(input("Enter the task number to mark as done: "))
+                todo_list.mark_task_as_done(task_number)
+            except ValueError:
+                print("Please enter a valid number.")
         elif choice == "4":
-            task_number = int(input("Enter the task number to remove: "))
-            todo_list.remove_task(task_number)
+            try:
+                task_number = int(input("Enter the task number to remove: "))
+                todo_list.remove_task(task_number)
+            except ValueError:
+                    print("Please enter a valid number.")
         elif choice == "5":
             break
         else:

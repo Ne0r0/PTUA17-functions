@@ -1,4 +1,2 @@
-{"task": "hi", "done": false}
-{"task": "People", "done": true}
-{"task": "Eat something", "done": true}
-{"task": "Help to someone", "done": false}
+{"task": "eat", "due": "2025-12-10", "done": false}
+{"task": "sleep", "due": "2025-03-06", "done": false}
