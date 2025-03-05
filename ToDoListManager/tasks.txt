@@ -1,3 +1,4 @@
-{"task": "eat", "due": "2025-12-10", "done": false}
-{"task": "sleep", "due": "2025-03-06", "done": false}
-{"task": "repeat", "due": "2025-04-11", "done": false}
+{"category": "Home", "task": "Eat", "priority": 1, "due": "2025-12-31", "done": false}
+{"category": "Home", "task": "Sleep", "priority": 3, "due": "2025-03-05", "done": true}
+{"category": "Work*", "task": "Repeat", "priority": 4, "due": "2025-04-06", "done": false}
+{"category": "", "task": "Work Harder", "priority": 1, "due": "2025-04-11", "done": false}
