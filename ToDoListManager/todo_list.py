@@ -57,7 +57,7 @@ class ToDoList:
         else:
             sorted_tasks = sorted(self.tasks, key=lambda x: x['priority'])
             table = []
-            for idx, task in enumerate(self.tasks, start=1):
+            for idx, task in enumerate(sorted_tasks, start=1):
                 status = "[✔]" if task["done"] else "[ ]"
                 due_info = f" (Due: {task['due']})" if task.get("due") else ""
                 table.append([idx, task["category"], task["task"], task["priority"], due_info, status])
