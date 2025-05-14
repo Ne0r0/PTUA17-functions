@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Entry</title>
+</head>
+<body>
+    <h1>Update Your Entry</h1>
+    <form method="POST" action="{{ url_for('update', id=irasas.id) }}">
+        {{ form.hidden_tag() }}
+        <div>
+            <label for="turinys">Content:</label>
+            <textarea id="turinys" name="turinys" required>{{ form.turinys.data }}</textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Update">
+        </div>
+    </form>
+    <br>
+    <a href="{{ url_for('irasai') }}">Back to Entries</a>
+</body>
+</html>

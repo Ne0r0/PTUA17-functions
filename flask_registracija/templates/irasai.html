@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Forma naujam įrašui pridėti -->
+<h2>Pridėti naują įrašą</h2>
+<form method="POST">
+    {{ form.hidden_tag() }}  
+    <div class="form-group">
+        <label for="turinys">Įrašas:</label>
+        {{ form.turinys(class="form-control", rows="4") }}  
+    </div>
+    <button type="submit" class="btn btn-primary">Išsaugoti</button>
+</form>
+
+<!-- Visų įrašų sąrašas -->
+{% if visi_irasai %}
+  {% for irasas in visi_irasai %}
+    <hr>
+    <p>Įrašas: {{ irasas.turinys }}</p>
+    <p>Data: {{ irasas.data.strftime("%Y-%m-%d %H:%M") }}</p>
+    <a href="{{ url_for('delete', id=irasas.id) }}">Ištrinti</a>
+    <a href="{{ url_for('update', id=irasas.id) }}">Redaguoti</a>
+    <hr>
+  {% endfor %}
+
+  <!-- Puslapiavimas -->
+  {% for page_num in visi_irasai.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+    {% if page_num %}
+      {% if visi_irasai.page == page_num %}
+        <a class="btn btn-info mb-4" href="{{ url_for('irasai', page=page_num) }}">{{ page_num }}</a>
+      {% else %}
+        <a class="btn btn-outline-info mb-4" href="{{ url_for('irasai', page=page_num) }}">{{ page_num }}</a>
+      {% endif %}
+    {% else %}
+      ...
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<p><a href="{{ url_for('irasai') }}">Naujas įrašas</a></p>
+
+{% endblock %}
